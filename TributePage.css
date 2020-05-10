@@ -1,0 +1,45 @@
+#main {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: blue;
+
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1440px) {
+  #main {
+
+  }
+
+  .media-container {
+    flex-direction: row;
+  }
+
+  #img-div {
+
+  }
+  #myCarousel {
+    width: 50%;
+
+    color: white;
+  }
+}
