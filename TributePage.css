@@ -9,6 +9,24 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#title {
+  font-size: 32px;
+  letter-spacing: 1.1px;
+}
+
+#tribute-info {
+  line-height: 22px;
+  letter-spacing: 1.1px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  line-height: 22px;
+  letter-spacing: 1.1px;
 }
 
 .media-container {
@@ -16,30 +34,123 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  background-color: blue;
-
 }
 
 #img-div {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-@media only screen and (min-width: 1440px) {
-  #main {
+img {
+  width: 100%;
+}
 
+#myCarousel {
+  height: 170px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: lightgray;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  margin-left: -18px !important;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  margin-right: -20px !important;
+}
+
+.timeline {
+  margin-bottom: 30px;
+}
+.timelineList {
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.timelineTitle {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1.1px;
+  margin: 20px 20px;
+}
+
+.timeline-year {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+}
+
+.timeline-description {
+  font-size: 15px;
+  letter-spacing: 1.1px;
+}
+
+footer {
+  background-color: lightgray;
+  height: 80px;
+}
+
+.carousel-indicators {
+  bottom: 0px !important;
+}
+
+blockquote {
+  padding: 10px 50px !important;
+  border: 0 !important;
+}
+
+.moreInfoLink {
+  margin-left: 20px;
+}
+
+figcaption {
+  display: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .timelineList {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 
-  .media-container {
-    flex-direction: row;
-  }
-
-  #img-div {
-
-  }
   #myCarousel {
-    width: 50%;
+    padding-top: 30px;
+  }
 
-    color: white;
+  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: -45px !important;
+  }
+
+  .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: -45px !important;
+  }
+
+  .moreInfoLink {
+    margin-left: 100px;
+  }
+
+}
+@media only screen and (min-width: 1200px) {
+  #title {
+    font-size: 36px;
+  }
+
+  #tribute-info {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 18px;
   }
 }
